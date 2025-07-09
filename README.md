@@ -17,8 +17,11 @@ Electronic waste (e-waste) poses a serious environmental challenge. Manual class
 
 ## 🗂 Dataset Structure
 Dataset/
+
 ├── train/
+
 ├── validation/
+
 └── test/
 
 ## 🗂 Dataset

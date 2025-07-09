@@ -1,19 +1,46 @@
-# 🔌 E-Waste Image Classification using EfficientNetV2B0
+🔌 E-Waste Image Classification using EfficientNetV2B0
 
-This is a basic deep learning project aimed at classifying different types of electronic waste using images. The model is built using **EfficientNetV2B0** and leverages **transfer learning** to speed up training and improve accuracy.
+This is a deep learning project focused on classifying different types of electronic waste using images. The model uses EfficientNetV2B0 with transfer learning to enhance accuracy while keeping training efficient.
 
 📌 Project Overview
 
-Electronic waste (e-waste) is a growing concern for the environment. Sorting these wastes manually is inefficient and error-prone. In this project, we use AI to automate this process by classifying e-waste images into 10 categories using a convolutional neural network.
+Electronic waste (e-waste) poses a serious environmental challenge. Manual classification is time-consuming and often inaccurate. This project automates the identification of e-waste items by classifying images into 10 predefined categories using a CNN-based image classifier.
 
-🧠 Current Features
+🧠 Features
 
-- ✅ Dataset loading using `ImageDataGenerator`  
-- ✅ Transfer learning with `EfficientNetV2B0` from Keras  
-- ✅ Custom classification head (Dense layer with softmax)  
-- ✅ Basic training and validation pipeline  
-- ✅ Accuracy and loss plotted over epochs  
-- ✅ Evaluation using test accuracy  
+✅ EfficientNetV2B0 as a pre-trained base  
+✅ Custom classification head with softmax output  
+✅ Training, validation, and testing using `image_dataset_from_directory`  
+✅ EarlyStopping and ModelCheckpoint callbacks  
+✅ Evaluation with confusion matrix & classification report  
+✅ Interactive Gradio interface for image prediction
+
+🗂 Dataset Structure
+Dataset/
+├── train/
+├── validation/
+└── test/
 
 🗂 Dataset
 Source: [Kaggle - E-Waste Image Dataset](https://www.kaggle.com/datasets/akshat103/e-waste-image-dataset)
+
+## 🛠️ Tools & Technologies
+
+- Python
+- TensorFlow & Keras
+- EfficientNetV2B0 (Transfer Learning)
+- Gradio
+- NumPy, Matplotlib, Seaborn
+- PIL (Image Handling)
+- Scikit-learn (Evaluation metrics)
+
+Each folder contains 10 class-specific subfolders with images.
+
+📉 Model Accuracy: ~94%  
+📦 Model Format: `best_model.keras`
+
+🖥 Try It Yourself
+
+Run the notebook or use the Gradio interface to test with your own images:
+```python
+interface.launch()

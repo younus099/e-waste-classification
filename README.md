@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🔌 E-Waste Image Classification using EfficientNetV2B0
 
 This is a deep learning project focused on classifying different types of electronic waste using images. The model uses EfficientNetV2B0 with transfer learning to enhance accuracy while keeping training efficient.
@@ -45,6 +44,3 @@ Each folder contains 10 class-specific subfolders with images.
 Run the notebook or use the Gradio interface to test with your own images:
 ```python
 interface.launch(share=True)
-=======
-"# e-waste-classification" 
->>>>>>> 9bd05b6 (Added trained model, updated notebook and Gradio interface)
